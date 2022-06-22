@@ -60,20 +60,17 @@ function mainDog(dog){
     let div2El = document.createElement('div')
     div2El.className = 'main__dog-section__btn'
     let p2El = document.createElement('p')
-    if(dog.isGoodDog === true){
-        p2El.textContent = 'Is naughty? Yes!'
-    }
-    else {
-        p2El.textContent = 'Is naughty? No!'
-    }
+    dog.isGoodDog === true ? 
+    p2El.textContent = 'Is naughty? Yes!' : 
+    p2El.textContent = 'Is naughty? No!'
+   
     
 
     let buttonEl = document.createElement('button')
-    if (dog.isGoodDog === true){
-        buttonEl.textContent = 'Bad Doggy'
-    } else {
+    dog.isGoodDog === true ?
+        buttonEl.textContent = 'Bad Doggy' :
         buttonEl.textContent = 'Good Doggy'
-    }
+    
 
     buttonEl.addEventListener('click', function (){
         if(dog.isGoodDog === true){
