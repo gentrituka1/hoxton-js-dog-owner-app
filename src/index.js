@@ -17,9 +17,7 @@ console.log(data);
 
 function addElement(){
     let liEl = document.querySelector('.dogs-list__button')
-
     liEl.addEventListener('click', addDog)
-
     let theUl = document.querySelector('.dogs-list')
 
     theUl.append(liEl)
